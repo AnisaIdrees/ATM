@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/premium-photo/close-up-atm-machine-concrete-wall_1048944-27493558.jpg?ga=GA1.1.1491679396.1730903470&semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+
+
+
+
+
+h1 {
+    color: #9803a8;
+}
+
+.balance-display {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.atm-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #9803a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+button {
+    position: relative;
+    /* margin: 300px auto 0; */
+    /* width: 500px; */
+    /* height: 250px; */
+    /* background: linear-gradient(0deg, #000, #272727); */
+    background-color: #9803a8;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+            #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -2;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+button:after {
+    filter: blur(50px);
+}
+
+
+
+
+
+button:hover {
+    background-color: #9803a8;
+}
+
+/* Deposit and Withdraw Sections */
+.hidden {
+    display: none;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid purple;
+}
+
+.Message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
